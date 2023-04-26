@@ -7,4 +7,4 @@ const getLeague = () => {
   return data;
 }
 
-export default getLeague;
+getLeague();
