@@ -7,7 +7,7 @@ fetchFpl();
 async function fetchFpl() {
   const response = await fetch(fplUrl);
   const jsonData = await response.json();
-  console.log(jsonData);
+  document.getElementById("title1").innerHTML = jsonData;
 }
 
 
