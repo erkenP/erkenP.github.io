@@ -3,6 +3,7 @@ const id = 623400;
 
 const getLeague = () => {
   const data = doCORSRequest(`${reqType.leagueClassicStanding}${id}/standings/`);
+  return data;
 }
 
-document.getElementById("title1").innerHTML = data;
+export default getLeague;
