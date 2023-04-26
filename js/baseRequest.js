@@ -28,4 +28,5 @@ export const doCORSRequest2 = async (url) => {
         ).then(res => {
             console.log(res.status, res.data.title)
         }));
+    return res.data
 }
