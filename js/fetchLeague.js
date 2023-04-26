@@ -1,4 +1,4 @@
-import { doCORSRequest, reqType } from './baseRequest';
+import { doCORSRequest, reqType } from './baseRequest.js';
 const id = 623400;
 
 const getLeague = () => {
