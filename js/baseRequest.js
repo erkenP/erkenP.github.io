@@ -14,14 +14,13 @@ export const reqType = {
 }
 
 export const doCORSRequest = async (url) => {
-    const response = await fetch(proxyURL + baseURL + url);
-    const myJson = await response.json();
-    return myJson
-}
-
-export function doCORSRequest2(url) {
-    fetch(proxyURL + baseURL + url).then((response) => response.json())
-        .then((responseJSON) => {
-            return responseJSON;
-        });
+    const response = await fetch(proxyURL + baseURL + url).then(response =>
+        response.json().then(data => ({
+            data: data,
+            status: response.status
+        })
+        ).then(res => {
+            console.log(res.status, res.data.title)
+        }));
+    return response;
 }
