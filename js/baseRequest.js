@@ -19,7 +19,7 @@ export const doCORSRequest = async (url) => {
     return myJson
 }
 
-export const doCORSRequest2 = async (url) => {
+export function doCORSRequest2(url) {
     fetch(proxyURL + baseURL + url).then((response) => response.json())
         .then((responseJSON) => {
             return responseJSON;
