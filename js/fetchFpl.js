@@ -1,6 +1,6 @@
 let fplUrl = 'https://fantasy.premierleague.com/api/leagues-classic/623400/standings/';
 
-document.getElementById("title1").innerHTML = "test";
+document.getElementById("title1").innerHTML = "test4";
 fetchFpl();
 
 
