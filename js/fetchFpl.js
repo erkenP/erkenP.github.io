@@ -6,9 +6,15 @@ fetchFpl();
 
 
 async function fetchFpl() {
-  const response = await fetch(fplUrl);
-  const jsonData = await response.json();
-  document.getElementById("title1").innerHTML = jsonData;
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+
+  fetch("https://fantasy.premierleague.com/api/leagues-classic/623400/standings", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
 }
 
 
