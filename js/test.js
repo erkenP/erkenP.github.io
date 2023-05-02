@@ -1,5 +1,6 @@
 import { getLeague } from './fetchLeague.js'
 
-console.log(getLeague(623400));
+const test = getLeague(623400);
+console.log(test);
 
 
