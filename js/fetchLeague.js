@@ -1,9 +1,12 @@
-import { doCORSRequest, reqType } from './baseRequest.js';
-const id = 623400;
+import { doCORSRequest, reqType, test } from './baseRequest'
 
-const getLeague = () => {
+export const getLeague = (id) => {
   const data = doCORSRequest(`${reqType.leagueClassicStanding}${id}/standings/`);
-  document.getElementById("title1").innerHTML = data.standings;
+  return data;
 }
 
-getLeague();
+export const getTest = () => {
+  return test();
+}
+
+
