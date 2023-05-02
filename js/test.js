@@ -1,5 +1,5 @@
 import { test2 } from './fetchLeague.js'
 
-console.log(test2());
+document.getElementById("title1").innerHTML = test2();
 
 
