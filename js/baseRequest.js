@@ -19,6 +19,3 @@ export const doCORSRequest = async (url) => {
     return myJson
 }
 
-export const test = () => {
-    return "hejhej"
-}
