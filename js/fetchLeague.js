@@ -4,6 +4,3 @@ export const getLeague = async (id) => {
   const data = await doCORSRequest(`${reqType.leagueClassicStanding}${id}/standings/`);
   return data;
 }
-
-
-
