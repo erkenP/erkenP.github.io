@@ -1,5 +1,5 @@
 import { test2 } from './fetchLeague.js'
 
-echo(test2());
+console.log(test2());
 
 
