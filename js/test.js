@@ -1,6 +1,8 @@
 import { getLeague } from './fetchLeague.js'
 
-const test = getLeague(623400);
-console.log(test);
 
+(async function () {
+    const test = await getLeague(623400);
+    console.log(test);
+})();
 
