@@ -1,4 +1,4 @@
-import { test } from './fetchLeague'
+import { test } from './fetchLeague.js'
 
 echo(test());
 
