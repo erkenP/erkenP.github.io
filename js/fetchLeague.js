@@ -5,7 +5,7 @@ export const getLeague = (id) => {
   return data;
 }
 
-export const getTest = () => {
+export const test = () => {
   return test();
 }
 
