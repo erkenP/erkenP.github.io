@@ -1,5 +1,5 @@
-import { test } from './fetchLeague.js'
+import { test2 } from './fetchLeague.js'
 
-echo(test());
+echo(test2());
 
 
